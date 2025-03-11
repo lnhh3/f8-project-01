@@ -69,7 +69,17 @@ a {
 }
 
 /* ===================== Header ===================== */
-.header {
+.sticky-header {
+    background: var(--color-secondary);
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background: var(--color-secondary) !important;
     height: 100vh;
@@ -78,7 +88,8 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -116,7 +127,7 @@ a {
 /* ===================== Hero ===================== */
 .hero {
     display: flex;
-    margin-top: 130px;
+    padding-top: 130px;
 }
 
 .hero .info {
